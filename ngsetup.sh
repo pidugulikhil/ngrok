@@ -38,9 +38,9 @@ tar -xvzf ngrok-v3-stable-linux-arm64.tgz
 sleep 1
 ./ngrok config add-authtoken $auth
 sleep 2
-cp -r ngrok /bin
+cp -r ngrok $PREFIX/bin/
 sleep 1
-chmod +x $HOME/../usr/bin/ngrok
+chmod +x $PREFIX/bin/ngrok
 sleep 1
 echo "SUCCEESFULLY NGROK INSTALLED ON TERMUX MOBILE "
 echo "ENVIRONMENT VARIABLE SETUP COMPLETE"  
