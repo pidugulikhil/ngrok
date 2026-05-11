@@ -41,9 +41,9 @@ This project provides **automated installer scripts** for [ngrok v3](https://ngr
 
 | Platform | Script | Architecture |
 |---|---|---|
-| 🐧 Linux | `install_ngrok.sh` | x86_64 (amd64) |
-| 📱 Termux (Android) | `install_ngrok.sh` | ARM64 |
-| 🪟 Windows | `install_ngrok.bat` | x86_64 (64-bit) / x86 (32-bit) |
+| 🐧 Linux | `ngsetup.sh` | x86_64 (amd64) |
+| 📱 Termux (Android) | `ngsetup.sh` | ARM64 |
+| 🪟 Windows | `ngsetup.bat` | x86_64 (64-bit) / x86 (32-bit) |
 
 ---
 
@@ -74,10 +74,10 @@ git clone https://github.com/pidugulikhil/ngrok.git
 cd ngrok
 
 # Give execute permission
-chmod +x install_ngrok.sh
+chmod +x ngsetup.sh
 
 # Run the installer
-./install_ngrok.sh
+./ngsetup.sh
 ```
 
 When prompted:
@@ -98,10 +98,10 @@ git clone https://github.com/pidugulikhil/ngrok.git
 cd ngrok
 
 # Give execute permission
-chmod +x install_ngrok.sh
+chmod +x ngsetup.sh
 
 # Run the installer
-./install_ngrok.sh
+./ngsetup.sh
 ```
 
 When prompted:
@@ -113,7 +113,7 @@ When prompted:
 
 ### 🪟 Windows
 
-1. **Download** [`install_ngrok.bat`](https://github.com/pidugulikhil/ngrok/blob/main/install_ngrok.bat) from this repo
+1. **Download** [`ngsetup.bat`](https://github.com/pidugulikhil/ngrok/blob/main/ngsetup.bat) from this repo
 
 2. **Right-click** the file → **Run as Administrator**
 
@@ -202,7 +202,7 @@ Forwarding   https://abc123.ngrok-free.app → http://localhost:8080
 
 | Problem | Fix |
 |---|---|
-| `Permission denied` on Linux | Run `chmod +x install_ngrok.sh` first |
+| `Permission denied` on Linux | Run `chmod +x ngsetup.sh` first |
 | `wget: command not found` on Termux | Run `pkg install wget` |
 | Windows: *"Access Denied"* when copying | Right-click `.bat` → Run as Administrator |
 | Windows: `curl` not found | Upgrade to Windows 10 v1803 or later |
